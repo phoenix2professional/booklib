@@ -10,7 +10,6 @@
 
 - Получение от пользователя его device_id для сохранения состояния авторизации в библиотеке
 
-
 ## Запускать:
 
 - Ввод в терминал `npm start`
@@ -47,4 +46,4 @@ npm install machine-id
 
 <img width="546" alt="Снимок экрана 2024-03-22 в 13 05 13" src="https://github.com/phoenix2professional/booklib/assets/162611674/959553df-4b93-4ed0-a605-ef4151d0805d">
 
-
+<img width="543" alt="Снимок экрана 2024-03-22 в 14 25 14" src="https://github.com/phoenix2professional/booklib/assets/162611674/6e3ddac9-9dbf-46f5-b18f-a470461bb51f">

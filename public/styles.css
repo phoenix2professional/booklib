@@ -1,0 +1,105 @@
+body {
+  background-color: #2a2e2a;
+  color: #edf0ed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#welcomeInput, #welcomeButton {
+  margin-bottom: 20px;
+}
+
+#welcomeMessageContainer {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+#welcomeMessage {
+  font-weight: bold; 
+}
+
+button {
+  background-color: #394039;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #edf0ed;
+  cursor: pointer;
+  width: 100%; 
+}
+
+button:hover, button:active {
+  background-color: #3f663f;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  max-width: 300px;
+}
+
+@media (min-width: 600px) {
+  .buttons {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .column:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#addBookScreen div {
+  margin-bottom: 10px;
+}
+
+#addBookScreen input[type="text"] {
+  width: 100%; 
+  padding: 5px;
+  margin-bottom: 10px; 
+}
+
+#existingGenres {
+  font-size: 0.8em;
+  color: #a9b2a9; 
+}
+
+#addBookScreen {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#notification {
+  position: fixed;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3e5c3e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
+}

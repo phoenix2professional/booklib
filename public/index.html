@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Библиотека</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="welcomeScreen">
+    <div>Введите ваше имя:</div>
+    <input type="text" id="welcomeInput" placeholder="Ваше имя..">
+    <button id="welcomeButton">Продолжить</button>
+  </div>
+  <div id="mainScreen" style="display: none;">
+    <div id="welcomeMessageContainer">
+      <div id="welcomeMessage"></div>
+    </div>
+    <div class="buttons">
+      <div class="column">
+        <button id="addBook">Добавить книгу</button>
+        <button id="deleteBook">Удалить книгу</button>
+      </div>
+      <div class="column">
+        <button id="findBook">Найти книгу</button>
+        <button id="viewBooks">Посмотреть список книг</button>
+      </div>     
+    </div> 
+  </div>
+  <div id="addBookScreen" style="display: none;">
+    <button id="backButton">Назад</button>
+    <div>Вы перешли в добавление новой книги.</div>
+    <div>
+      <div>Укажите название книги:</div>
+      <input type="text" id="bookTitleInput" placeholder="Например: Богатый папа..">
+    </div>
+    <div>
+      <div>Укажите автора книги:</div>
+      <input type="text" id="bookAuthorInput" placeholder="Например: Автор..">
+    </div>
+    <div>
+      <div>Укажите описание книги:</div>
+      <input type="text" id="bookDescriptionInput" placeholder="Например: Хорошая книга..">
+    </div>
+    <div>
+      <div>Укажите жанр книги:</div>
+      <input type="text" id="bookGenreInput" placeholder="Например: Рассказ..">
+      <div id="existingGenresInfo">
+        Жанры которые уже есть: <span id="existingGenres">Рассказ, Приключения, Сказка</span>
+      </div>
+    </div>
+    <button id="createBookButton">Создать</button>
+  </div>
+  <div id="deleteBookScreen" style="display: none;">
+    <button id="backButton">Назад</button>
+    <p>Чтобы удалить книгу, выберите ее.</p>
+    <div id="booksList"></div>
+  </div>
+  <div id="bookDetailsScreen" style="display: none;">
+    <button id="backToDeletionScreen">Назад</button>
+    <div id="bookDetails">
+    </div>
+    <button id="deleteThisBook">Удалить</button>
+  </div>
+  <div id="showBooksScreen" style="display: none;">
+    <button id="backToShowBooks">Назад</button>
+    <p>Список доступных книг:</p>
+    <div id="booksListView"></div>
+    <button id="showGenres">Жанр</button>
+  </div>  
+  <div id="bookDetailsScreendel" style="display: none;">
+    <button id="backFromDetailsButton">Назад</button>
+    <div id="bookDetailsdel">
+    </div>
+  </div>
+  <div id="GenreScreen" style="display: none;">
+    <button id="backFromGenreScreen">Назад</button>
+    <p>Список жанров:</p>
+    <div id="genresListView"></div>
+  </div>
+  <div id="searchBookScreen" style="display: none;">
+    <button id="backToMainScreen">Назад</button>
+    <p>Чтобы найти нужную книгу, введите ее название, автора или описание:</p>
+    <input type="text" id="searchInput" class="search-input" placeholder="Например: Богатый папа..">
+    <div id="searchResults"></div>
+  </div>
+  <div id="bookDetailsScreenWin" style="display: none;">
+    <div id="bookDetailsWin">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

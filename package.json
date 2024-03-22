@@ -1,0 +1,11 @@
+{
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^29.1.5",
+    "machine-id": "^1.0.0",
+    "sqlite3": "^5.1.7"
+  }
+}
